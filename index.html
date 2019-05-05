@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<title>Online Shop</title>
+</head>
+<body>
+	<script>
+		function popUp() {
+		    div = document.getElementById('popup');
+			div.style.display = "block";
+			setTimeout(function() {
+				div = document.getElementById('popup').style.opacity='1'},50)
+		}
+		function popDown() {
+		    div = document.getElementById('popup');
+			div.style.display = "none";
+			setTimeout(function() {
+				div = document.getElementById('popup').style.opacity='0'},50)
+		}
+		function popUpSign() {
+		    div = document.getElementById('popup-sign');
+			div.style.display = "block";
+			setTimeout(function() {
+				div = document.getElementById('popup-sign').style.opacity='1'},50)
+		}
+		function popDownSign() {
+		    div = document.getElementById('popup-sign');
+			div.style.display = "none";
+			setTimeout(function() {
+				div = document.getElementById('popup-sign').style.opacity='0'},50)
+		}
+	</script>
+	<div class="container">
+		<div id="popup">
+			<div class="popup-window">
+				<span class="popup-close" onclick="popDown();"><img width="35px" src="/img/cancel.png" alt=""></span>
+				<form action="" class="reg-form">
+					<div class="registration-container">
+						<div class="left-reg-form">
+							<label for="reg-login" class="reg-form-info">LOGIN</label>
+							<span>Enter your login<span class="reg-red">*</span></span>
+							<input id="reg-login" type="text" name="reg-login">
+							<label for="fname" class="reg-form-info">FIRST NAME</label>
+							<span>Enter your first name</span>
+							<input id="fname" type="text" name="fname">
+							<label for="lname" class="reg-form-info">LAST NAME</label>
+							<span>Enter your last name</span>
+							<input id="lname" type="text" name="lname">
+						</div>
+						<div class="right-reg-form">
+							<label for="reg-email" class="reg-form-info">EMAIL</label>
+							<span>Enter your e-mail address<span class="reg-red">*</span></span>
+							<input id="reg-email" type="email" name="reg-email">
+							<label for="reg-password" class="reg-form-info">PASSWORD</label>
+							<span>Enter your password<span class="reg-red">*</span></span>
+							<input id="reg-password" type="PASSWORD" name="reg-password">
+							<label for="try-reg-password" class="reg-form-info">TRY PASSWORD</label>
+							<span>Try again<span class="reg-red">*</span></span>
+							<input id="try-reg-password" type="PASSWORD" name="reg-password">
+						</div>
+					</div>
+					<input class="reg-button" type="button" value="Register">
+				</form>
+			</div>
+		</div>
+
+		<div id="popup-sign">
+			<div class="popup-window-sign">
+				<span class="popup-close-sign" onclick="popDownSign();"><img width="35px" src="/img/cancel.png" alt=""></span>
+				<form action="" class="sign-form">
+					<div class="registration-container">
+						<div class="left-reg-form">
+							<label for="sign-login" class="reg-form-info">LOGIN</label>
+							<span>Enter your login<span class="reg-red">*</span></span>
+							<input id="sign-login" type="text" name="sign-login">
+						</div>
+						<div class="right-reg-form">
+							<label for="sign-password" class="reg-form-info">PASSWORD</label>
+							<span>Enter your password<span class="reg-red">*</span></span>
+							<input id="sign-password" type="PASSWORD" name="sign-password">
+						</div>
+					</div>
+					<input class="reg-button" type="button" value="Register">
+				</form>
+			</div>
+		</div>
+		<header>
+			<div class="header-menu">
+				<ul>
+					<li class="header-point">
+						<a href="index.html" class="logo-header">Shop</a>
+					</li>
+					<li class="header-point">
+						<a href="index.html">Catalog</a>
+						<ul class="hamburger">
+							<li><a href="#">Sneakers</a></li>
+							<li><a href="#">Sandals</a></li>
+							<li><a href="#">Boot</a></li>
+						</ul>		
+					</li>
+					<li class="header-point">
+						<a href="">Discounts</a>
+						<ul class="hamburger">
+							<li><a href="#">New models</a></li>
+							<li><a href="#">Old models</a></li>
+						</ul>
+					</li>
+					<li class="header-point">
+						<a href="">Delivery</a>
+						<ul class="hamburger">
+							<li><a href="#">Sneakers</a></li>
+							<li><a href="#">Boot</a></li>
+							<li><a href="#">Sandals</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="header-menu-right">
+				<a class="cart" href="#">
+					<img width="30px" src="/img/shopping-basket.png" alt="">
+					<div class="basket-info">
+						<span class="count-of-product">0</span>
+						<span class="cart-name">Cart</span>
+					</div>
+				</a>
+				<div>
+					<img width="30px" src="/img/login.png" alt="">
+					<div class="basket-info">
+						<a href="#popup" onclick="popUp();" class="cart">Join</a>
+						<a class="cart" onclick="popUpSign();">Sign In</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="search">
+			<form action="">
+				<input size="150" type="text" name="" id="">
+				<button type="button">
+					<img width="15px;" src="/img/search.png" alt="">
+				</button>
+			</form>
+		</div>
+		<div class="all">
+			<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article><img src="/img/shoes2.jpg"></article>
+							<article><img src="/img/shoes3.jpg"></article>
+							<article><img src="/img/shoes.jpg"></article>
+							<article><img src="/img/shoes4.jpg"></article>
+							<article><img src="/img/shoes5.jpeg"></article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+			</article>
+		</div>
+
+		<main>
+			<div class="advantages">
+				<div class="advantages-content">
+					<span><img src="/img/icon-1.png" alt=""></span>
+					<span>DELIVERY</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, exercitationem!</p>
+				</div>
+				<div class="advantages-content">
+					<span><img src="/img/icon-2.png" alt=""></span>
+					<span>MONEY BACK</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, exercitationem!</p>
+				</div>
+				<div class="advantages-content">
+					<span><img src="/img/icon-3.png" alt=""></span>
+					<span>SECURE PAYMENT</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, exercitationem!</p>
+				</div>
+				<div class="advantages-content">
+					<span><img src="/img/icon-4.png" alt=""></span>
+					<span>100% GUARANTEED</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, exercitationem!</p>
+				</div>
+			</div>
+			<div class="main-page">
+				<div>
+					<a class="main-href" href="#"><img width="90%" src="/img/shoes.jpg" alt=""></a>
+				</div>
+				<div>
+					<a class="main-href" href="#"><img width="90%" src="/img/shoes3.jpg" alt=""></a>
+				</div>
+			</div>
+
+			<div class="products-grid">
+				<div class="product">
+					<a href="#"><img src="/img/shoes.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+				
+				<div class="product">
+					<a href="#"><img src="/img/shoes4.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+
+				<div class="product">
+					<a href="#"><img src="/img/shoes2.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+
+				<div class="product">
+					<a href="#"><img src="/img/shoes3.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+
+				<div class="product">
+					<a href="#"><img src="/img/shoes.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+				
+				<div class="product">
+					<a href="#"><img src="/img/shoes4.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+
+				<div class="product">
+					<a href="#"><img src="/img/shoes2.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+
+				<div class="product">
+					<a href="#"><img src="/img/shoes3.jpg" alt=""></a>
+					<div class="product-info">
+						<span class="product-name">Name</span>
+						<span class="product-price">250$</span>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column-1">
+				<span>Shop</span>
+				<p>COPYRIGHT © 2019<br>LDONNIS & JWINTHEI<br>ALL RIGHTS RESERVED.</p>
+			</div>
+			<div class="footer-column-2">
+				<span>GET HELP</span>
+				<a href="#"><p>Contacts</p></a>
+				<a href="#"><p>About</p></a>
+			</div>
+			<div class="footer-column-0"></div>
+			<div class="footer-column-0"></div>
+			<div class="footer-column-3"></div>
+			<div class="footer-column-4">
+				<span>SOCIAL</span>
+				<div class="social-images">
+					<a href="#"><img width="15px" src="/img/vk.png" alt=""><img src="" alt=""></a>
+					<a href="#"><img width="15px" src="/img/instagram.png" alt=""><img src="" alt=""></a>
+				</div>
+			</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
